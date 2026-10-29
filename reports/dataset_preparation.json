@@ -1,0 +1,41 @@
+{
+  "train": {
+    "scenes": [
+      "abudhabi",
+      "aguasclaras",
+      "beihai",
+      "bordeaux",
+      "cupertino",
+      "mumbai",
+      "nantes",
+      "paris",
+      "pisa",
+      "rennes",
+      "saclay_e"
+    ],
+    "patch_count": 160
+  },
+  "val": {
+    "scenes": [
+      "beirut",
+      "bercy",
+      "hongkong"
+    ],
+    "patch_count": 70
+  },
+  "test": {
+    "scenes": [
+      "brasilia",
+      "chongqing",
+      "dubai",
+      "lasvegas",
+      "milano",
+      "montpellier",
+      "norcia",
+      "rio",
+      "saclay_w",
+      "valencia"
+    ],
+    "patch_count": 84
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "status": "REGISTERED",
+  "checkpoint_path": "C:\\Project\\Urban Sprawl Detection & Change Monitoring\\checkpoints\\best_checkpoint.pth",
+  "file_size_mb": 88.96,
+  "epoch": 5,
+  "best_metric": 0.48706,
+  "threshold": 0.5,
+  "architecture": "FC-Siam-diff",
+  "in_channels": 3,
+  "base_channels": 32,
+  "parameters": 7763041,
+  "parameters_m": 7.763
+}

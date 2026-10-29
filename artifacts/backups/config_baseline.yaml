@@ -1,0 +1,66 @@
+# Urban Sprawl Detection & Change Monitoring
+# Siamese U-Net (FC-Siam-diff) Training Configuration
+
+model:
+  name: "FC-Siam-diff"
+  in_channels: 3
+  base_channels: 32
+  num_classes: 1
+
+dataset:
+  train_parquet: "dataset/train-00000-of-00001.parquet"
+  test_parquet: "dataset/test-00000-of-00001.parquet"
+  splits_file: "configs/geographic_splits.json"
+  patch_size: 256
+  stride: 224
+  min_valid_ratio: 0.5
+  normalization:
+    mean: [0.485, 0.456, 0.406]
+    std: [0.229, 0.224, 0.225]
+
+augmentation:
+  hflip_prob: 0.5
+  vflip_prob: 0.5
+  rot90_prob: 0.5
+
+training:
+  epochs: 40
+  batch_size: 4
+  num_workers: 0  # Safe default for Windows multiprocessing
+  pin_memory: false
+  optimizer:
+    name: "AdamW"
+    lr: 0.0001
+    weight_decay: 0.01
+  scheduler:
+    name: "CosineAnnealingLR"
+    t_max: 40
+    eta_min: 0.000001
+  loss:
+    bce_weight: 0.5
+    dice_weight: 0.5
+    pos_weight: 5.0
+    smooth: 1.0
+  early_stopping:
+    patience: 8
+    monitor: "val_f1"
+    mode: "max"
+  gradient_clip: 1.0
+  use_amp: false  # Auto-enabled when CUDA is active
+
+reproducibility:
+  seed: 42
+  deterministic: true
+
+checkpoints:
+  save_dir: "artifacts/checkpoints"
+  best_filename: "best_model.pth"
+  latest_filename: "last_checkpoint.pth"
+  history_filename: "training_history.csv"
+  config_filename: "training_config.json"
+  split_filename: "split_manifest.json"
+
+reports:
+  dir: "reports/training"
+  summary_file: "reports/training_summary.json"
+  test_metrics_file: "reports/test_metrics.json"

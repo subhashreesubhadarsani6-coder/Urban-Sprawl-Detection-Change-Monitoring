@@ -1,0 +1,21 @@
+{
+  "status": "COMPLETED",
+  "timestamp": "2026-10-25T10:09:03Z",
+  "model_name": "FC-Siam-diff",
+  "trainable_parameters": 7763041,
+  "device": "cuda:0",
+  "total_epochs_trained": 2,
+  "best_epoch": 2,
+  "best_val_f1": 0.1051,
+  "best_val_iou": 0.0554,
+  "best_checkpoint_path": "artifacts/checkpoints\\best_model.pth",
+  "latest_checkpoint_path": "artifacts/checkpoints\\last_checkpoint.pth",
+  "history_csv_path": "artifacts/checkpoints\\training_history.csv",
+  "learning_curves_dir": "reports/training",
+  "sample_prediction_image": "reports/training\\sample_prediction_comparison.png",
+  "geographic_splits": {
+    "train_scenes": 11,
+    "val_scenes": 3,
+    "test_scenes": 10
+  }
+}

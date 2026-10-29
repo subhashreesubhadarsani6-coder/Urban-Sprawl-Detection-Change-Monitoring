@@ -1,0 +1,25 @@
+{
+  "status": "SUCCESS",
+  "t1_path": "reports/sample_t1_lasvegas.png",
+  "t2_path": "reports/sample_t2_lasvegas.png",
+  "checkpoint_used": "artifacts/checkpoints/best_model.pth",
+  "image_dimensions": {
+    "height": 824,
+    "width": 716,
+    "channels": 3
+  },
+  "applied_threshold": 0.5,
+  "changed_pixels": 90259,
+  "total_pixels": 589984,
+  "change_percentage": 15.299,
+  "area_km2": 9.0259,
+  "area_calculation_valid": false,
+  "resolution_description": "Uncalibrated pixel grid (fallback 10m GSD used for estimation)",
+  "artifacts": {
+    "probability_map": "reports/predictions\\probability_map.png",
+    "change_mask": "reports/predictions\\change_mask.png",
+    "change_overlay": "reports/predictions\\change_overlay.png",
+    "change_mask_geotiff": null,
+    "prediction_metadata": "reports/predictions\\prediction_metadata.json"
+  }
+}

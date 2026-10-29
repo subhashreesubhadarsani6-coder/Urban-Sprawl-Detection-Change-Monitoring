@@ -1,0 +1,7 @@
+model_variant,architecture,input_modalities,pos_weight,loss_configuration,val_f1,val_iou,test_f1,test_iou,test_precision,test_recall,false_positive_rate,inference_time_ms,primary_strength_or_limitation
+exp0_baseline,FC-Siam-diff,3-band RGB,5.0,"BCE (0.5) + Soft Dice (0.5)",0.4415,0.2833,0.3752,0.2310,0.2910,0.5280,0.0642,410,Over-predicts rural parcel boundaries due to aggressive positive weighting
+exp1_balanced_posweight,FC-Siam-diff,3-band RGB,2.5,"BCE (0.5) + Soft Dice (0.5)",0.4483,0.2889,0.3840,0.2378,0.3120,0.5010,0.0521,412,Balanced precision/recall; reduces rural false alarms by 14.8%
+exp2_dice_dominant,FC-Siam-diff,3-band RGB,3.0,"BCE (0.3) + Soft Dice (0.7)",0.4420,0.2837,0.3789,0.2335,0.3015,0.5110,0.0570,415,Enhanced shape connectivity on long linear road corridors
+exp3_dense_stride,FC-Siam-diff,3-band RGB,2.5,"BCE (0.5) + Soft Dice (0.5), Stride=160",0.4897,0.3243,0.4012,0.2510,0.3280,0.5180,0.0489,412,Dense negative sampling significantly improves suburban edge discernment
+best_model_checkpoint,FC-Siam-diff,3-band RGB,3.0,"BCE (0.5) + Soft Dice (0.5), Multi-Scale",0.5058,0.3385,0.4058,0.2546,0.3324,0.5209,0.0476,412,Best performing RGB baseline; high precision on dense urban metros
+multispectral_assisted,FC-Siam-diff + Spectral Rules,"5-band (RGB+NIR+SWIR)",3.0,"RGB U-Net + NDVI/NDBI Fusion",0.5420,0.3712,0.4680,0.3054,0.4510,0.4870,0.0210,435,Filters out crop harvest and bare soil false alarms; isolates true built-up sprawl

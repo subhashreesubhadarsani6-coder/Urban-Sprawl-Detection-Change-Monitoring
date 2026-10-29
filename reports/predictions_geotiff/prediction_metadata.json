@@ -1,0 +1,25 @@
+{
+  "status": "SUCCESS",
+  "t1_path": "reports/test_utm_t1.tif",
+  "t2_path": "reports/test_utm_t2.tif",
+  "checkpoint_used": "artifacts/checkpoints/best_model.pth",
+  "image_dimensions": {
+    "height": 300,
+    "width": 300,
+    "channels": 3
+  },
+  "applied_threshold": 0.5,
+  "changed_pixels": 0,
+  "total_pixels": 90000,
+  "change_percentage": 0.0,
+  "area_km2": 0.0,
+  "area_calculation_valid": true,
+  "resolution_description": "Calibrated 15.0m x 15.0m GSD via CRS: EPSG:32611",
+  "artifacts": {
+    "probability_map": "reports/predictions_geotiff\\probability_map.png",
+    "change_mask": "reports/predictions_geotiff\\change_mask.png",
+    "change_overlay": "reports/predictions_geotiff\\change_overlay.png",
+    "change_mask_geotiff": "reports/predictions_geotiff\\change_mask.tif",
+    "prediction_metadata": "reports/predictions_geotiff\\prediction_metadata.json"
+  }
+}

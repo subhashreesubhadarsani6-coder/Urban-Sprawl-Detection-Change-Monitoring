@@ -1,0 +1,245 @@
+{
+  "audit_checkpoint": "artifacts/checkpoints/best_model.pth",
+  "optimal_threshold": 0.5,
+  "global_metrics": {
+    "precision": 0.3324,
+    "recall": 0.5209,
+    "f1": 0.4058,
+    "iou": 0.2546,
+    "accuracy": 0.9212,
+    "tp": 82862,
+    "fp": 166413,
+    "tn": 2752446,
+    "fn": 76215,
+    "predicted_positives": 249275,
+    "actual_positives": 159077,
+    "valid_pixels": 3077936,
+    "is_all_zero": false,
+    "is_all_one": false,
+    "degenerate": false
+  },
+  "scenes_ranked_by_f1": [
+    {
+      "scene_id": "montpellier",
+      "f1": 0.7547,
+      "iou": 0.6061,
+      "precision": 0.7095,
+      "recall": 0.8061,
+      "accuracy": 0.9644,
+      "tp": 10523,
+      "fp": 4309,
+      "tn": 174763,
+      "fn": 2531,
+      "actual_change_pixels": 13054,
+      "predicted_change_pixels": 14832,
+      "valid_pixels": 192126
+    },
+    {
+      "scene_id": "lasvegas",
+      "f1": 0.5741,
+      "iou": 0.4026,
+      "precision": 0.4312,
+      "recall": 0.8585,
+      "accuracy": 0.9023,
+      "tp": 38866,
+      "fp": 51259,
+      "tn": 493455,
+      "fn": 6404,
+      "actual_change_pixels": 45270,
+      "predicted_change_pixels": 90125,
+      "valid_pixels": 589984
+    },
+    {
+      "scene_id": "rio",
+      "f1": 0.5156,
+      "iou": 0.3474,
+      "precision": 0.5185,
+      "recall": 0.5127,
+      "accuracy": 0.9452,
+      "tp": 4385,
+      "fp": 4072,
+      "tn": 137754,
+      "fn": 4167,
+      "actual_change_pixels": 8552,
+      "predicted_change_pixels": 8457,
+      "valid_pixels": 150378
+    },
+    {
+      "scene_id": "dubai",
+      "f1": 0.4003,
+      "iou": 0.2502,
+      "precision": 0.4107,
+      "recall": 0.3904,
+      "accuracy": 0.8839,
+      "tp": 19010,
+      "fp": 27278,
+      "tn": 414749,
+      "fn": 29679,
+      "actual_change_pixels": 48689,
+      "predicted_change_pixels": 46288,
+      "valid_pixels": 490716
+    },
+    {
+      "scene_id": "brasilia",
+      "f1": 0.2829,
+      "iou": 0.1648,
+      "precision": 0.2799,
+      "recall": 0.286,
+      "accuracy": 0.9626,
+      "tp": 1499,
+      "fp": 3856,
+      "tn": 193979,
+      "fn": 3743,
+      "actual_change_pixels": 5242,
+      "predicted_change_pixels": 5355,
+      "valid_pixels": 203077
+    },
+    {
+      "scene_id": "chongqing",
+      "f1": 0.2684,
+      "iou": 0.155,
+      "precision": 0.4495,
+      "recall": 0.1913,
+      "accuracy": 0.9248,
+      "tp": 5479,
+      "fp": 6711,
+      "tn": 361772,
+      "fn": 23158,
+      "actual_change_pixels": 28637,
+      "predicted_change_pixels": 12190,
+      "valid_pixels": 397120
+    },
+    {
+      "scene_id": "milano",
+      "f1": 0.2497,
+      "iou": 0.1427,
+      "precision": 0.3563,
+      "recall": 0.1922,
+      "accuracy": 0.9908,
+      "tp": 465,
+      "fp": 840,
+      "tn": 300851,
+      "fn": 1954,
+      "actual_change_pixels": 2419,
+      "predicted_change_pixels": 1305,
+      "valid_pixels": 304110
+    },
+    {
+      "scene_id": "saclay_w",
+      "f1": 0.0932,
+      "iou": 0.0489,
+      "precision": 0.054,
+      "recall": 0.3408,
+      "accuracy": 0.9243,
+      "tp": 1710,
+      "fp": 29966,
+      "tn": 404648,
+      "fn": 3308,
+      "actual_change_pixels": 5018,
+      "predicted_change_pixels": 31676,
+      "valid_pixels": 439632
+    },
+    {
+      "scene_id": "norcia",
+      "f1": 0.0787,
+      "iou": 0.041,
+      "precision": 0.0436,
+      "recall": 0.4059,
+      "accuracy": 0.8744,
+      "tp": 498,
+      "fp": 10928,
+      "tn": 80630,
+      "fn": 729,
+      "actual_change_pixels": 1227,
+      "predicted_change_pixels": 11426,
+      "valid_pixels": 92785
+    },
+    {
+      "scene_id": "valencia",
+      "f1": 0.0299,
+      "iou": 0.0152,
+      "precision": 0.0155,
+      "recall": 0.4407,
+      "accuracy": 0.8728,
+      "tp": 427,
+      "fp": 27194,
+      "tn": 189845,
+      "fn": 542,
+      "actual_change_pixels": 969,
+      "predicted_change_pixels": 27621,
+      "valid_pixels": 218008
+    }
+  ],
+  "error_analysis_data": {
+    "rio": {
+      "fp_count": 4072,
+      "fn_count": 4167,
+      "tp_count": 4385,
+      "fp_mean_lum_diff": 37.66,
+      "background_mean_lum_diff": 13.6
+    },
+    "saclay_w": {
+      "fp_count": 29966,
+      "fn_count": 3308,
+      "tp_count": 1710,
+      "fp_mean_lum_diff": 51.27,
+      "background_mean_lum_diff": 18.42
+    },
+    "valencia": {
+      "fp_count": 27194,
+      "fn_count": 542,
+      "tp_count": 427,
+      "fp_mean_lum_diff": 47.87,
+      "background_mean_lum_diff": 32.0
+    },
+    "chongqing": {
+      "fp_count": 6711,
+      "fn_count": 23158,
+      "tp_count": 5479,
+      "fp_mean_lum_diff": 35.93,
+      "background_mean_lum_diff": 15.68
+    },
+    "montpellier": {
+      "fp_count": 4309,
+      "fn_count": 2531,
+      "tp_count": 10523,
+      "fp_mean_lum_diff": 37.63,
+      "background_mean_lum_diff": 15.26
+    },
+    "brasilia": {
+      "fp_count": 3856,
+      "fn_count": 3743,
+      "tp_count": 1499,
+      "fp_mean_lum_diff": 45.52,
+      "background_mean_lum_diff": 20.88
+    },
+    "norcia": {
+      "fp_count": 10928,
+      "fn_count": 729,
+      "tp_count": 498,
+      "fp_mean_lum_diff": 52.89,
+      "background_mean_lum_diff": 21.45
+    },
+    "dubai": {
+      "fp_count": 27278,
+      "fn_count": 29679,
+      "tp_count": 19010,
+      "fp_mean_lum_diff": 31.63,
+      "background_mean_lum_diff": 12.2
+    },
+    "milano": {
+      "fp_count": 840,
+      "fn_count": 1954,
+      "tp_count": 465,
+      "fp_mean_lum_diff": 30.47,
+      "background_mean_lum_diff": 7.64
+    },
+    "lasvegas": {
+      "fp_count": 51259,
+      "fn_count": 6404,
+      "tp_count": 38866,
+      "fp_mean_lum_diff": 30.78,
+      "background_mean_lum_diff": 20.67
+    }
+  }
+}

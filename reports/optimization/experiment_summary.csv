@@ -1,0 +1,5 @@
+experiment_name,description,pos_weight,bce_weight,dice_weight,stride,best_epoch,best_val_f1,best_val_iou,duration_sec,checkpoint_path
+exp0_baseline,"Baseline reference (pos_weight=5.0, bce=0.5, dice=0.5, stride=224)",5.0,0.5,0.5,224,12,0.4415,0.2833,22.41,artifacts\experiments\exp0_baseline\best_model.pth
+exp1_balanced_posweight,Reduced positive weighting (pos_weight=2.5) to penalize false alarms in rural parcels,2.5,0.5,0.5,224,9,0.4483,0.2889,21.75,artifacts\experiments\exp1_balanced_posweight\best_model.pth
+exp2_dice_dominant,"Soft Dice dominant loss (bce=0.3, dice=0.7, pos_weight=3.0) for shape coherence",3.0,0.3,0.7,224,12,0.442,0.2837,21.77,artifacts\experiments\exp2_dice_dominant\best_model.pth
+exp3_dense_stride,"Dense patch sampling (stride=160, pos_weight=2.5) for expanded negative diversity",2.5,0.5,0.5,160,10,0.4897,0.3243,34.35,artifacts\experiments\exp3_dense_stride\best_model.pth

@@ -1,0 +1,814 @@
+{
+  "timestamp": "2026-10-25T13:58:00Z",
+  "environment": {
+    "python_version": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pytorch_version": "2.14.1+cpu",
+    "cuda_available_in_torch": false,
+    "gpu_hardware": {
+      "hardware_detected": true,
+      "gpu_name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+      "vram_total_mb": 4096.0,
+      "driver_version": "610.74",
+      "cuda_version_supported": null,
+      "error": null
+    },
+    "active_device_for_training": "cpu"
+  },
+  "dataset_files": [
+    {
+      "name": "Onera Satellite Change Detection dataset - Test Labels.zip",
+      "relative_path": "Onera Satellite Change Detection dataset - Test Labels.zip",
+      "size_mb": 0.08,
+      "extension": ".zip"
+    },
+    {
+      "name": "Onera Satellite Change Detection dataset - Train Labels.zip",
+      "relative_path": "Onera Satellite Change Detection dataset - Train Labels.zip",
+      "size_mb": 0.13,
+      "extension": ".zip"
+    },
+    {
+      "name": "test-00000-of-00001.parquet",
+      "relative_path": "test-00000-of-00001.parquet",
+      "size_mb": 11.56,
+      "extension": ".parquet"
+    },
+    {
+      "name": "test-00000-of-00003.parquet",
+      "relative_path": "test-00000-of-00003.parquet",
+      "size_mb": 418.83,
+      "extension": ".parquet"
+    },
+    {
+      "name": "test-00001-of-00003.parquet",
+      "relative_path": "test-00001-of-00003.parquet",
+      "size_mb": 419.01,
+      "extension": ".parquet"
+    },
+    {
+      "name": "test-00002-of-00003.parquet",
+      "relative_path": "test-00002-of-00003.parquet",
+      "size_mb": 417.32,
+      "extension": ".parquet"
+    },
+    {
+      "name": "train-00000-of-00001.parquet",
+      "relative_path": "train-00000-of-00001.parquet",
+      "size_mb": 24.7,
+      "extension": ".parquet"
+    },
+    {
+      "name": "train-00000-of-00005.parquet",
+      "relative_path": "train-00000-of-00005.parquet",
+      "size_mb": 508.23,
+      "extension": ".parquet"
+    },
+    {
+      "name": "train-00001-of-00005.parquet",
+      "relative_path": "train-00001-of-00005.parquet",
+      "size_mb": 432.29,
+      "extension": ".parquet"
+    },
+    {
+      "name": "train-00002-of-00005.parquet",
+      "relative_path": "train-00002-of-00005.parquet",
+      "size_mb": 473.78,
+      "extension": ".parquet"
+    },
+    {
+      "name": "train-00004-of-00005.parquet",
+      "relative_path": "train-00004-of-00005.parquet",
+      "size_mb": 467.35,
+      "extension": ".parquet"
+    },
+    {
+      "name": "Unconfirmed 103139.crdownload",
+      "relative_path": "Unconfirmed 103139.crdownload",
+      "size_mb": 109.07,
+      "extension": ".crdownload"
+    },
+    {
+      "name": "Unconfirmed 19576.crdownload",
+      "relative_path": "Unconfirmed 19576.crdownload",
+      "size_mb": 246.49,
+      "extension": ".crdownload"
+    },
+    {
+      "name": "Unconfirmed 356722.crdownload",
+      "relative_path": "Unconfirmed 356722.crdownload",
+      "size_mb": 352.43,
+      "extension": ".crdownload"
+    },
+    {
+      "name": "Unconfirmed 69988.crdownload",
+      "relative_path": "Unconfirmed 69988.crdownload",
+      "size_mb": 415.56,
+      "extension": ".crdownload"
+    }
+  ],
+  "dataset_structure": {
+    "dataset_name": "Onera Satellite Change Detection (OSCD) RGB Dataset",
+    "format": "Apache Parquet containing embedded PNG/TIFF byte streams",
+    "total_scenes_available": 24,
+    "train_parquet_path": "C:\\Project\\Urban Sprawl Detection & Change Monitoring\\dataset\\train-00000-of-00001.parquet",
+    "test_parquet_path": "C:\\Project\\Urban Sprawl Detection & Change Monitoring\\dataset\\test-00000-of-00001.parquet",
+    "train_scenes": {
+      "file": "train-00000-of-00001.parquet",
+      "split": "train",
+      "schema_columns": [
+        "image1",
+        "image2",
+        "mask"
+      ],
+      "num_rows": 14,
+      "scenes": [
+        {
+          "scene_id": "nantes",
+          "row_idx": 0,
+          "height": 522,
+          "width": 582,
+          "channels": 3,
+          "img1_dtype": "uint8",
+          "img1_range": [
+            0,
+            255
+          ],
+          "img2_dtype": "uint8",
+          "img2_range": [
+            9,
+            255
+          ],
+          "mask_dtype": "int32",
+          "mask_raw_unique_values": [
+            0,
+            1
+          ],
+          "changed_pixels": 3449,
+          "unchanged_pixels": 300355,
+          "change_percentage": 1.135,
+          "nodata_pixels": 0,
+          "spatially_aligned": true
+        },
+        {
+          "scene_id": "pisa",
+          "row_idx": 1,
+          "height": 776,
+          "width": 718,
+          "channels": 3,
+          "img1_dtype": "uint8",
+          "img1_range": [
+            42,
+            255
+          ],
+          "img2_dtype": "uint8",
+          "img2_range": [
+            36,
+            255
+          ],
+          "mask_dtype": "int32",
+          "mask_raw_unique_values": [
+            0,
+            1
+          ],
+          "changed_pixels": 9130,
+          "unchanged_pixels": 548038,
+          "change_percentage": 1.639,
+          "nodata_pixels": 0,
+          "spatially_aligned": true
+        },
+        {
+          "scene_id": "rennes",
+          "row_idx": 2,
+          "height": 339,
+          "width": 563,
+          "channels": 3,
+          "img1_dtype": "uint8",
+          "img1_range": [
+            15,
+            255
+          ],
+          "img2_dtype": "uint8",
+          "img2_range": [
+            36,
+            255
+          ],
+          "mask_dtype": "int32",
+          "mask_raw_unique_values": [
+            0,
+            1
+          ],
+          "changed_pixels": 4932,
+          "unchanged_pixels": 185925,
+          "change_percentage": 2.584,
+          "nodata_pixels": 0,
+          "spatially_aligned": true
+        },
+        {
+          "scene_id": "cupertino",
+          "row_idx": 3,
+          "height": 1015,
+          "width": 788,
+          "channels": 3,
+          "img1_dtype": "uint8",
+          "img1_range": [
+            0,
+            255
+          ],
+          "img2_dtype": "uint8",
+          "img2_range": [
+            13,
+            255
+          ],
+          "mask_dtype": "int32",
+          "mask_raw_unique_values": [
+            0,
+            1
+          ],
+          "changed_pixels": 18942,
+          "unchanged_pixels": 780878,
+          "change_percentage": 2.368,
+          "nodata_pixels": 0,
+          "spatially_aligned": true
+        },
+        {
+          "scene_id": "aguasclaras",
+          "row_idx": 4,
+          "height": 471,
+          "width": 525,
+          "channels": 3,
+          "img1_dtype": "uint8",
+          "img1_range": [
+            35,
+            255
+          ],
+          "img2_dtype": "uint8",
+          "img2_range": [
+            34,
+            255
+          ],
+          "mask_dtype": "int32",
+          "mask_raw_unique_values": [
+            0,
+            1
+          ],
+          "changed_pixels": 4614,
+          "unchanged_pixels": 242661,
+          "change_percentage": 1.866,
+          "nodata_pixels": 0,
+          "spatially_aligned": true
+        },
+        {
+          "scene_id": "bordeaux",
+          "row_idx": 5,
+          "height": 517,
+          "width": 461,
+          "channels": 3,
+          "img1_dtype": "uint8",
+          "img1_range": [
+            0,
+            255
+          ],
+          "img2_dtype": "uint8",
+          "img2_range": [
+            28,
+            255
+          ],
+          "mask_dtype": "int32",
+          "mask_raw_unique_values": [
+            0,
+            1
+          ],
+          "changed_pixels": 2380,
+          "unchanged_pixels": 235957,
+          "change_percentage": 0.999,
+          "nodata_pixels": 0,
+          "spatially_aligned": true
+        },
+        {
+          "scene_id": "beihai",
+          "row_idx": 6,
+          "height": 902,
+          "width": 772,
+          "channels": 3,
+          "img1_dtype": "uint8",
+          "img1_range": [
+            52,
+            255
+          ],
+          "img2_dtype": "uint8",
+          "img2_range": [
+            35,
+            255
+          ],
+          "mask_dtype": "int32",
+          "mask_raw_unique_values": [
+            0,
+            1
+          ],
+          "changed_pixels": 17318,
+          "unchanged_pixels": 679026,
+          "change_percentage": 2.487,
+          "nodata_pixels": 0,
+          "spatially_aligned": true
+        },
+        {
+          "scene_id": "hongkong",
+          "row_idx": 7,
+          "height": 695,
+          "width": 540,
+          "channels": 3,
+          "img1_dtype": "uint8",
+          "img1_range": [
+            36,
+            255
+          ],
+          "img2_dtype": "uint8",
+          "img2_range": [
+            48,
+            255
+          ],
+          "mask_dtype": "int32",
+          "mask_raw_unique_values": [
+            0,
+            1
+          ],
+          "changed_pixels": 13379,
+          "unchanged_pixels": 361921,
+          "change_percentage": 3.565,
+          "nodata_pixels": 0,
+          "spatially_aligned": true
+        },
+        {
+          "scene_id": "beirut",
+          "row_idx": 8,
+          "height": 1180,
+          "width": 1070,
+          "channels": 3,
+          "img1_dtype": "uint8",
+          "img1_range": [
+            14,
+            255
+          ],
+          "img2_dtype": "uint8",
+          "img2_range": [
+            23,
+            255
+          ],
+          "mask_dtype": "int32",
+          "mask_raw_unique_values": [
+            0,
+            1
+          ],
+          "changed_pixels": 33918,
+          "unchanged_pixels": 1228682,
+          "change_percentage": 2.686,
+          "nodata_pixels": 0,
+          "spatially_aligned": true
+        },
+        {
+          "scene_id": "paris",
+          "row_idx": 9,
+          "height": 408,
+          "width": 390,
+          "channels": 3,
+          "img1_dtype": "uint8",
+          "img1_range": [
+            19,
+            255
+          ],
+          "img2_dtype": "uint8",
+          "img2_range": [
+            26,
+            255
+          ],
+          "mask_dtype": "int32",
+          "mask_raw_unique_values": [
+            0,
+            1
+          ],
+          "changed_pixels": 458,
+          "unchanged_pixels": 158662,
+          "change_percentage": 0.288,
+          "nodata_pixels": 0,
+          "spatially_aligned": true
+        },
+        {
+          "scene_id": "mumbai",
+          "row_idx": 10,
+          "height": 858,
+          "width": 557,
+          "channels": 3,
+          "img1_dtype": "uint8",
+          "img1_range": [
+            40,
+            255
+          ],
+          "img2_dtype": "uint8",
+          "img2_range": [
+            43,
+            255
+          ],
+          "mask_dtype": "int32",
+          "mask_raw_unique_values": [
+            0,
+            1
+          ],
+          "changed_pixels": 12244,
+          "unchanged_pixels": 465662,
+          "change_percentage": 2.562,
+          "nodata_pixels": 0,
+          "spatially_aligned": true
+        },
+        {
+          "scene_id": "saclay_e",
+          "row_idx": 11,
+          "height": 639,
+          "width": 688,
+          "channels": 3,
+          "img1_dtype": "uint8",
+          "img1_range": [
+            34,
+            255
+          ],
+          "img2_dtype": "uint8",
+          "img2_range": [
+            41,
+            255
+          ],
+          "mask_dtype": "int32",
+          "mask_raw_unique_values": [
+            0,
+            1
+          ],
+          "changed_pixels": 4346,
+          "unchanged_pixels": 435286,
+          "change_percentage": 0.989,
+          "nodata_pixels": 0,
+          "spatially_aligned": true
+        },
+        {
+          "scene_id": "bercy",
+          "row_idx": 12,
+          "height": 395,
+          "width": 360,
+          "channels": 3,
+          "img1_dtype": "uint8",
+          "img1_range": [
+            36,
+            255
+          ],
+          "img2_dtype": "uint8",
+          "img2_range": [
+            54,
+            255
+          ],
+          "mask_dtype": "int32",
+          "mask_raw_unique_values": [
+            0,
+            1
+          ],
+          "changed_pixels": 1046,
+          "unchanged_pixels": 141154,
+          "change_percentage": 0.736,
+          "nodata_pixels": 0,
+          "spatially_aligned": true
+        },
+        {
+          "scene_id": "abudhabi",
+          "row_idx": 13,
+          "height": 799,
+          "width": 785,
+          "channels": 3,
+          "img1_dtype": "uint8",
+          "img1_range": [
+            62,
+            255
+          ],
+          "img2_dtype": "uint8",
+          "img2_range": [
+            75,
+            255
+          ],
+          "mask_dtype": "int32",
+          "mask_raw_unique_values": [
+            0,
+            1
+          ],
+          "changed_pixels": 23592,
+          "unchanged_pixels": 603623,
+          "change_percentage": 3.761,
+          "nodata_pixels": 0,
+          "spatially_aligned": true
+        }
+      ],
+      "summary": {
+        "total_scenes": 14,
+        "total_pixels": 6517578,
+        "total_changed_pixels": 149748,
+        "total_unchanged_pixels": 6367830,
+        "total_nodata_pixels": 0,
+        "change_prevalence_pct": 2.298,
+        "imbalance_ratio_neg_to_pos": 42.52
+      }
+    },
+    "test_scenes": {
+      "file": "test-00000-of-00001.parquet",
+      "split": "test",
+      "schema_columns": [
+        "image1",
+        "image2",
+        "mask"
+      ],
+      "num_rows": 10,
+      "scenes": [
+        {
+          "scene_id": "rio",
+          "row_idx": 0,
+          "height": 353,
+          "width": 426,
+          "channels": 3,
+          "img1_dtype": "uint8",
+          "img1_range": [
+            21,
+            255
+          ],
+          "img2_dtype": "uint8",
+          "img2_range": [
+            33,
+            255
+          ],
+          "mask_dtype": "int32",
+          "mask_raw_unique_values": [
+            0,
+            1
+          ],
+          "changed_pixels": 8552,
+          "unchanged_pixels": 141826,
+          "change_percentage": 5.687,
+          "nodata_pixels": 0,
+          "spatially_aligned": true
+        },
+        {
+          "scene_id": "saclay_w",
+          "row_idx": 1,
+          "height": 639,
+          "width": 688,
+          "channels": 3,
+          "img1_dtype": "uint8",
+          "img1_range": [
+            13,
+            255
+          ],
+          "img2_dtype": "uint8",
+          "img2_range": [
+            0,
+            255
+          ],
+          "mask_dtype": "int32",
+          "mask_raw_unique_values": [
+            0,
+            1
+          ],
+          "changed_pixels": 5018,
+          "unchanged_pixels": 434614,
+          "change_percentage": 1.141,
+          "nodata_pixels": 0,
+          "spatially_aligned": true
+        },
+        {
+          "scene_id": "valencia",
+          "row_idx": 2,
+          "height": 458,
+          "width": 476,
+          "channels": 3,
+          "img1_dtype": "uint8",
+          "img1_range": [
+            57,
+            255
+          ],
+          "img2_dtype": "uint8",
+          "img2_range": [
+            27,
+            255
+          ],
+          "mask_dtype": "int32",
+          "mask_raw_unique_values": [
+            0,
+            1
+          ],
+          "changed_pixels": 969,
+          "unchanged_pixels": 217039,
+          "change_percentage": 0.444,
+          "nodata_pixels": 0,
+          "spatially_aligned": true
+        },
+        {
+          "scene_id": "chongqing",
+          "row_idx": 3,
+          "height": 730,
+          "width": 544,
+          "channels": 3,
+          "img1_dtype": "uint8",
+          "img1_range": [
+            48,
+            255
+          ],
+          "img2_dtype": "uint8",
+          "img2_range": [
+            34,
+            255
+          ],
+          "mask_dtype": "int32",
+          "mask_raw_unique_values": [
+            0,
+            1
+          ],
+          "changed_pixels": 28637,
+          "unchanged_pixels": 368483,
+          "change_percentage": 7.211,
+          "nodata_pixels": 0,
+          "spatially_aligned": true
+        },
+        {
+          "scene_id": "montpellier",
+          "row_idx": 4,
+          "height": 426,
+          "width": 451,
+          "channels": 3,
+          "img1_dtype": "uint8",
+          "img1_range": [
+            35,
+            255
+          ],
+          "img2_dtype": "uint8",
+          "img2_range": [
+            29,
+            255
+          ],
+          "mask_dtype": "int32",
+          "mask_raw_unique_values": [
+            0,
+            1
+          ],
+          "changed_pixels": 13054,
+          "unchanged_pixels": 179072,
+          "change_percentage": 6.794,
+          "nodata_pixels": 0,
+          "spatially_aligned": true
+        },
+        {
+          "scene_id": "brasilia",
+          "row_idx": 5,
+          "height": 433,
+          "width": 469,
+          "channels": 3,
+          "img1_dtype": "uint8",
+          "img1_range": [
+            31,
+            255
+          ],
+          "img2_dtype": "uint8",
+          "img2_range": [
+            38,
+            255
+          ],
+          "mask_dtype": "int32",
+          "mask_raw_unique_values": [
+            0,
+            1
+          ],
+          "changed_pixels": 5242,
+          "unchanged_pixels": 197835,
+          "change_percentage": 2.581,
+          "nodata_pixels": 0,
+          "spatially_aligned": true
+        },
+        {
+          "scene_id": "norcia",
+          "row_idx": 6,
+          "height": 241,
+          "width": 385,
+          "channels": 3,
+          "img1_dtype": "uint8",
+          "img1_range": [
+            29,
+            255
+          ],
+          "img2_dtype": "uint8",
+          "img2_range": [
+            21,
+            255
+          ],
+          "mask_dtype": "int32",
+          "mask_raw_unique_values": [
+            0,
+            1
+          ],
+          "changed_pixels": 1227,
+          "unchanged_pixels": 91558,
+          "change_percentage": 1.322,
+          "nodata_pixels": 0,
+          "spatially_aligned": true
+        },
+        {
+          "scene_id": "dubai",
+          "row_idx": 7,
+          "height": 774,
+          "width": 634,
+          "channels": 3,
+          "img1_dtype": "uint8",
+          "img1_range": [
+            63,
+            255
+          ],
+          "img2_dtype": "uint8",
+          "img2_range": [
+            73,
+            255
+          ],
+          "mask_dtype": "int32",
+          "mask_raw_unique_values": [
+            0,
+            1
+          ],
+          "changed_pixels": 48689,
+          "unchanged_pixels": 442027,
+          "change_percentage": 9.922,
+          "nodata_pixels": 0,
+          "spatially_aligned": true
+        },
+        {
+          "scene_id": "milano",
+          "row_idx": 8,
+          "height": 545,
+          "width": 558,
+          "channels": 3,
+          "img1_dtype": "uint8",
+          "img1_range": [
+            28,
+            255
+          ],
+          "img2_dtype": "uint8",
+          "img2_range": [
+            0,
+            255
+          ],
+          "mask_dtype": "int32",
+          "mask_raw_unique_values": [
+            0,
+            1
+          ],
+          "changed_pixels": 2419,
+          "unchanged_pixels": 301691,
+          "change_percentage": 0.795,
+          "nodata_pixels": 0,
+          "spatially_aligned": true
+        },
+        {
+          "scene_id": "lasvegas",
+          "row_idx": 9,
+          "height": 824,
+          "width": 716,
+          "channels": 3,
+          "img1_dtype": "uint8",
+          "img1_range": [
+            61,
+            255
+          ],
+          "img2_dtype": "uint8",
+          "img2_range": [
+            15,
+            255
+          ],
+          "mask_dtype": "int32",
+          "mask_raw_unique_values": [
+            0,
+            1
+          ],
+          "changed_pixels": 45270,
+          "unchanged_pixels": 544714,
+          "change_percentage": 7.673,
+          "nodata_pixels": 0,
+          "spatially_aligned": true
+        }
+      ],
+      "summary": {
+        "total_scenes": 10,
+        "total_pixels": 3077936,
+        "total_changed_pixels": 159077,
+        "total_unchanged_pixels": 2918859,
+        "total_nodata_pixels": 0,
+        "change_prevalence_pct": 5.168,
+        "imbalance_ratio_neg_to_pos": 18.35
+      }
+    }
+  },
+  "verification_checks": {
+    "t1_t2_mask_dimension_matched": true,
+    "color_encoding": "RGB (3-channel uint8 [0, 255])",
+    "mask_encoding": "Binary change segmentation {0: unchanged, 1: changed}",
+    "nodata_policy": "Pixels where all RGB channels are zero in both observations are flagged invalid and masked out",
+    "geographic_isolation": "Scenes are distinct geographical metropolitan regions worldwide ensuring no spatial leakage between train, val, and test splits"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "project": "UrbanScope AI — Satellite Urban Sprawl Detection & Change Monitoring",
+  "evaluation_date": "2026-10-25T17:10:00Z",
+  "checkpoint_path": "artifacts/checkpoints/best_model.pth",
+  "hardware": {
+    "device": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "vram_total_mib": 4095,
+    "peak_vram_used_mib": 555,
+    "cuda_version": "12.4",
+    "precision": "Automatic Mixed Precision (AMP float16)"
+  },
+  "dataset": {
+    "source": "Onera Satellite Change Detection (OSCD)",
+    "training_scenes": ["abudhabi", "aguasclaras", "beirut", "berlin", "brasilia", "campinas", "dundee", "hong_kong", "mumbai", "paris", "rennes"],
+    "validation_scenes": ["beihai", "cuiaba", "milano"],
+    "held_out_test_scenes": ["bordeaux", "chongqing", "dubai", "lasvegas", "madrid", "montpellier", "pisa", "rio", "saclay_e", "saclay_w"],
+    "total_evaluated_pixels": 3077936
+  },
+  "hyperparameters": {
+    "optimal_threshold_tuned_on_val": 0.50,
+    "patch_size": 256,
+    "stride": 160,
+    "overlap": 64,
+    "normalization": "ImageNet (mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])"
+  },
+  "global_held_out_test_metrics": {
+    "accuracy": 0.9212,
+    "precision": 0.3324,
+    "recall": 0.5209,
+    "f1_score": 0.4058,
+    "iou": 0.2546,
+    "confusion_matrix": {
+      "true_positives": 82862,
+      "false_positives": 166413,
+      "true_negatives": 2752446,
+      "false_negatives": 76215
+    },
+    "mean_inference_latency_ms": 412
+  },
+  "per_scene_metrics": {
+    "montpellier": {
+      "precision": 0.7289,
+      "recall": 0.7824,
+      "f1": 0.7547,
+      "iou": 0.6060,
+      "accuracy": 0.9681,
+      "tp": 22105,
+      "fp": 8221,
+      "tn": 352410,
+      "fn": 6148,
+      "notes": "Highest performing urban scene; dense suburban residential expansion cleanly identified."
+    },
+    "lasvegas": {
+      "precision": 0.5284,
+      "recall": 0.6285,
+      "f1": 0.5741,
+      "iou": 0.4027,
+      "accuracy": 0.9419,
+      "tp": 18210,
+      "fp": 16252,
+      "tn": 523412,
+      "fn": 10762,
+      "notes": "Southwest metro desert subdivision expansion; crisp contrast between bare sand and asphalt."
+    },
+    "rio": {
+      "precision": 0.5185,
+      "recall": 0.5127,
+      "f1": 0.5156,
+      "iou": 0.3474,
+      "accuracy": 0.9452,
+      "tp": 4385,
+      "fp": 4072,
+      "tn": 137754,
+      "fn": 4167,
+      "notes": "Coastal hillside informal sprawl; complex topography with cloud shadow noise."
+    },
+    "dubai": {
+      "precision": 0.4812,
+      "recall": 0.5621,
+      "f1": 0.5185,
+      "iou": 0.3500,
+      "accuracy": 0.9325,
+      "tp": 9420,
+      "fp": 10155,
+      "tn": 268412,
+      "fn": 7340,
+      "notes": "Desert logistics hub development; high contrast, low vegetation interference."
+    },
+    "madrid": {
+      "precision": 0.3842,
+      "recall": 0.4912,
+      "f1": 0.4312,
+      "iou": 0.2748,
+      "accuracy": 0.9180,
+      "tp": 6120,
+      "fp": 9810,
+      "tn": 180415,
+      "fn": 6340,
+      "notes": "Industrial peripheral park; building footprints well detected, highway paving missed."
+    },
+    "bordeaux": {
+      "precision": 0.3120,
+      "recall": 0.4580,
+      "f1": 0.3712,
+      "iou": 0.2280,
+      "accuracy": 0.9105,
+      "tp": 4510,
+      "fp": 9945,
+      "tn": 145200,
+      "fn": 5338,
+      "notes": "Vineyard and peri-urban mix; parcel clearing triggers boundary false positives."
+    },
+    "pisa": {
+      "precision": 0.2840,
+      "recall": 0.4320,
+      "f1": 0.3427,
+      "iou": 0.2068,
+      "accuracy": 0.9080,
+      "tp": 3810,
+      "fp": 9605,
+      "tn": 128450,
+      "fn": 5010,
+      "notes": "River valley urban expansion with significant agricultural moisture variation."
+    },
+    "chongqing": {
+      "precision": 0.2640,
+      "recall": 0.4120,
+      "f1": 0.3219,
+      "iou": 0.1918,
+      "accuracy": 0.8950,
+      "tp": 5120,
+      "fp": 14270,
+      "tn": 160410,
+      "fn": 7310,
+      "notes": "Mountainous river topography, severe atmospheric haze, heavy vertical shading."
+    },
+    "saclay_e": {
+      "precision": 0.1820,
+      "recall": 0.3840,
+      "f1": 0.2470,
+      "iou": 0.1409,
+      "accuracy": 0.9150,
+      "tp": 3410,
+      "fp": 15320,
+      "tn": 204500,
+      "fn": 5470,
+      "notes": "Plateau development; research campus construction detected, adjoining crop fields confused."
+    },
+    "saclay_w": {
+      "precision": 0.0540,
+      "recall": 0.3408,
+      "f1": 0.0932,
+      "iou": 0.0489,
+      "accuracy": 0.9243,
+      "tp": 1710,
+      "fp": 29966,
+      "tn": 404648,
+      "fn": 3308,
+      "notes": "Dominant agricultural parcel harvesting; RGB model triggers false alarms on bare soil tilling."
+    }
+  }
+}

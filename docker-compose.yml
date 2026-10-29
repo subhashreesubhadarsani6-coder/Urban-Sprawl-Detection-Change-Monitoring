@@ -1,0 +1,56 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: urbanscope-backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - DATABASE_URL=sqlite:///./backend/urbanscope.db
+      - MAX_UPLOAD_SIZE_BYTES=52428800
+      - SENTINEL_CLIENT_ID=sh-84510175-c0f8-4230-9d8c-46bbdf892a08
+      - SENTINEL_CLIENT_SECRET=sZRnInuAJY3UNmdS7BQ7qEB7xqVQg1DFf9FIM7yACJWeNPZF7xpAgZUGOOLY4te6xkLExFbDq8v77alkf4DWX0
+    volumes:
+      - backend-storage:/app/backend/storage
+      - ./checkpoints:/app/checkpoints:ro
+    networks:
+      - urbanscope-net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: urbanscope-frontend
+    restart: unless-stopped
+    ports:
+      - "5173:80"
+      - "80:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      - urbanscope-net
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://localhost/"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
+
+volumes:
+  backend-storage:
+
+networks:
+  urbanscope-net:
+    driver: bridge

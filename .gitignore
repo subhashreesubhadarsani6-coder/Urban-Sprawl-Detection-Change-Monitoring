@@ -1,0 +1,77 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Caches, coverage, and logs
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Node / Frontend build artifacts
+node_modules/
+dist/
+dist-ssr/
+*.local
+tsconfig.tsbuildinfo
+
+# Secrets & Environment variables (Keep templates like .env.example)
+.env
+*.env
+!.env.example
+
+# Datasets and large binary parquet / zip archives
+dataset/*.parquet
+dataset/*.zip
+dataset/*.crdownload
+*.parquet
+*.crdownload
+
+# SQLite databases & transient test databases
+*.db
+*.sqlite3
+*.db-journal
+backend/urbanscope.db
+backend/test_*.db
+
+# Backend runtime storage (uploads & output job artifacts)
+backend/storage/uploads/*
+!backend/storage/uploads/.gitkeep
+!backend/storage/uploads/sample_*.png
+backend/storage/artifacts/*
+!backend/storage/artifacts/.gitkeep
+backend/storage/cache/*
+
+# Large model checkpoints and experiment weights (>50MB)
+artifacts/backups/*.pth
+artifacts/checkpoints/*.pth
+artifacts/experiments/**/*.pth
+checkpoints/latest_checkpoint.pth
+
+# Editor directories and OS files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

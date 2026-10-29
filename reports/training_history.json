@@ -1,0 +1,33 @@
+{
+  "best_f1": 0.48706,
+  "best_threshold": 0.5,
+  "best_checkpoint": "checkpoints/best_checkpoint.pth",
+  "total_epochs": 5,
+  "history": [
+    {
+      "epoch": 1,
+      "train": {"loss": 0.7772, "f1": 0.1275, "duration_sec": 86.12},
+      "val": {"loss": 0.7585, "f1": 0.4343, "selected_threshold": 0.7}
+    },
+    {
+      "epoch": 2,
+      "train": {"loss": 0.7072, "f1": 0.2688, "duration_sec": 88.93},
+      "val": {"loss": 0.7317, "f1": 0.3507, "selected_threshold": 0.7}
+    },
+    {
+      "epoch": 3,
+      "train": {"loss": 0.6833, "f1": 0.3264, "duration_sec": 89.44},
+      "val": {"loss": 0.6696, "f1": 0.4695, "selected_threshold": 0.5}
+    },
+    {
+      "epoch": 4,
+      "train": {"loss": 0.6666, "f1": 0.3790, "duration_sec": 85.61},
+      "val": {"loss": 0.6630, "f1": 0.4734, "selected_threshold": 0.6}
+    },
+    {
+      "epoch": 5,
+      "train": {"loss": 0.6591, "f1": 0.3912, "duration_sec": 88.37},
+      "val": {"loss": 0.6604, "f1": 0.4871, "selected_threshold": 0.5}
+    }
+  ]
+}

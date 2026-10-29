@@ -1,0 +1,2884 @@
+{
+  "dataset_dir": "C:\\Project\\Urban Sprawl Detection & Change Monitoring\\dataset",
+  "parquet_files": {
+    "test-00000-of-00001.parquet": {
+      "size_mb": 11.56,
+      "num_rows": 10,
+      "num_row_groups": 1,
+      "columns": [
+        "image1",
+        "image2",
+        "mask"
+      ],
+      "sample_details": [
+        {
+          "row_idx": 0,
+          "image1": {
+            "path": null,
+            "bytes_length": 294707,
+            "format": "PNG",
+            "size": [
+              426,
+              353
+            ],
+            "mode": "RGB",
+            "shape": [
+              353,
+              426,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 21.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 285231,
+            "format": "PNG",
+            "size": [
+              426,
+              353
+            ],
+            "mode": "RGB",
+            "shape": [
+              353,
+              426,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 33.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 601646,
+            "format": "TIFF",
+            "size": [
+              426,
+              353
+            ],
+            "mode": "I",
+            "shape": [
+              353,
+              426
+            ],
+            "dtype": "int32",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 141826,
+              "1": 8552
+            }
+          }
+        },
+        {
+          "row_idx": 1,
+          "image1": {
+            "path": null,
+            "bytes_length": 712331,
+            "format": "PNG",
+            "size": [
+              688,
+              639
+            ],
+            "mode": "RGB",
+            "shape": [
+              639,
+              688,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 13.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 671678,
+            "format": "PNG",
+            "size": [
+              688,
+              639
+            ],
+            "mode": "RGB",
+            "shape": [
+              639,
+              688,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 1758662,
+            "format": "TIFF",
+            "size": [
+              688,
+              639
+            ],
+            "mode": "I",
+            "shape": [
+              639,
+              688
+            ],
+            "dtype": "int32",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 434614,
+              "1": 5018
+            }
+          }
+        },
+        {
+          "row_idx": 2,
+          "image1": {
+            "path": null,
+            "bytes_length": 453547,
+            "format": "PNG",
+            "size": [
+              476,
+              458
+            ],
+            "mode": "RGB",
+            "shape": [
+              458,
+              476,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 57.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 472534,
+            "format": "PNG",
+            "size": [
+              476,
+              458
+            ],
+            "mode": "RGB",
+            "shape": [
+              458,
+              476,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 27.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 872166,
+            "format": "TIFF",
+            "size": [
+              476,
+              458
+            ],
+            "mode": "I",
+            "shape": [
+              458,
+              476
+            ],
+            "dtype": "int32",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 217039,
+              "1": 969
+            }
+          }
+        },
+        {
+          "row_idx": 3,
+          "image1": {
+            "path": null,
+            "bytes_length": 647733,
+            "format": "PNG",
+            "size": [
+              544,
+              730
+            ],
+            "mode": "RGB",
+            "shape": [
+              730,
+              544,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 48.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 684948,
+            "format": "PNG",
+            "size": [
+              544,
+              730
+            ],
+            "mode": "RGB",
+            "shape": [
+              730,
+              544,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 34.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 1588614,
+            "format": "TIFF",
+            "size": [
+              544,
+              730
+            ],
+            "mode": "I",
+            "shape": [
+              730,
+              544
+            ],
+            "dtype": "int32",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 368483,
+              "1": 28637
+            }
+          }
+        },
+        {
+          "row_idx": 4,
+          "image1": {
+            "path": null,
+            "bytes_length": 405521,
+            "format": "PNG",
+            "size": [
+              451,
+              426
+            ],
+            "mode": "RGB",
+            "shape": [
+              426,
+              451,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 35.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 409011,
+            "format": "PNG",
+            "size": [
+              451,
+              426
+            ],
+            "mode": "RGB",
+            "shape": [
+              426,
+              451,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 29.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 768638,
+            "format": "TIFF",
+            "size": [
+              451,
+              426
+            ],
+            "mode": "I",
+            "shape": [
+              426,
+              451
+            ],
+            "dtype": "int32",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 179072,
+              "1": 13054
+            }
+          }
+        }
+      ]
+    },
+    "test-00000-of-00003.parquet": {
+      "size_mb": 418.83,
+      "num_rows": 116,
+      "num_row_groups": 2,
+      "columns": [
+        "image1",
+        "image2",
+        "mask"
+      ],
+      "sample_details": [
+        {
+          "row_idx": 0,
+          "image1": {
+            "path": null,
+            "bytes_length": 2352327,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 2076520,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 19337,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 908632,
+              "1": 139944
+            }
+          }
+        },
+        {
+          "row_idx": 1,
+          "image1": {
+            "path": null,
+            "bytes_length": 1357043,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 4.0,
+            "max": 237.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 1665437,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 1455,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 1047162,
+              "1": 1414
+            }
+          }
+        },
+        {
+          "row_idx": 2,
+          "image1": {
+            "path": null,
+            "bytes_length": 1497619,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 1837964,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 2333,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 1042438,
+              "1": 6138
+            }
+          }
+        },
+        {
+          "row_idx": 3,
+          "image1": {
+            "path": null,
+            "bytes_length": 2371871,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 1919573,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 4059,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 1021679,
+              "1": 26897
+            }
+          }
+        },
+        {
+          "row_idx": 4,
+          "image1": {
+            "path": null,
+            "bytes_length": 1500555,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 1719080,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 3803,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 1020650,
+              "1": 27926
+            }
+          }
+        }
+      ]
+    },
+    "test-00001-of-00003.parquet": {
+      "size_mb": 419.01,
+      "num_rows": 116,
+      "num_row_groups": 2,
+      "columns": [
+        "image1",
+        "image2",
+        "mask"
+      ],
+      "sample_details": [
+        {
+          "row_idx": 0,
+          "image1": {
+            "path": null,
+            "bytes_length": 2605654,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 2165663,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 1404,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 1047501,
+              "1": 1075
+            }
+          }
+        },
+        {
+          "row_idx": 1,
+          "image1": {
+            "path": null,
+            "bytes_length": 1156037,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 216.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 1609974,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 4949,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 1033806,
+              "1": 14770
+            }
+          }
+        },
+        {
+          "row_idx": 2,
+          "image1": {
+            "path": null,
+            "bytes_length": 1769791,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 1874914,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 2055,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 1040381,
+              "1": 8195
+            }
+          }
+        },
+        {
+          "row_idx": 3,
+          "image1": {
+            "path": null,
+            "bytes_length": 2342652,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 2033986,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 15969,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 927913,
+              "1": 120663
+            }
+          }
+        },
+        {
+          "row_idx": 4,
+          "image1": {
+            "path": null,
+            "bytes_length": 1535884,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 1729960,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 1700,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 1041878,
+              "1": 6698
+            }
+          }
+        }
+      ]
+    },
+    "test-00002-of-00003.parquet": {
+      "size_mb": 417.32,
+      "num_rows": 116,
+      "num_row_groups": 2,
+      "columns": [
+        "image1",
+        "image2",
+        "mask"
+      ],
+      "sample_details": [
+        {
+          "row_idx": 0,
+          "image1": {
+            "path": null,
+            "bytes_length": 1605593,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 1815867,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 3585,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 1021349,
+              "1": 27227
+            }
+          }
+        },
+        {
+          "row_idx": 1,
+          "image1": {
+            "path": null,
+            "bytes_length": 1824669,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 1733181,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 1940,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 1045282,
+              "1": 3294
+            }
+          }
+        },
+        {
+          "row_idx": 2,
+          "image1": {
+            "path": null,
+            "bytes_length": 2613577,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 2146988,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 21557,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 837172,
+              "1": 211404
+            }
+          }
+        },
+        {
+          "row_idx": 3,
+          "image1": {
+            "path": null,
+            "bytes_length": 2533918,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 1908100,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 1731,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 1045374,
+              "1": 3202
+            }
+          }
+        },
+        {
+          "row_idx": 4,
+          "image1": {
+            "path": null,
+            "bytes_length": 2630561,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 2177619,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 2648,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 1038512,
+              "1": 10064
+            }
+          }
+        }
+      ]
+    },
+    "train-00000-of-00001.parquet": {
+      "size_mb": 24.7,
+      "num_rows": 14,
+      "num_row_groups": 1,
+      "columns": [
+        "image1",
+        "image2",
+        "mask"
+      ],
+      "sample_details": [
+        {
+          "row_idx": 0,
+          "image1": {
+            "path": null,
+            "bytes_length": 609733,
+            "format": "PNG",
+            "size": [
+              582,
+              522
+            ],
+            "mode": "RGB",
+            "shape": [
+              522,
+              582,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 575004,
+            "format": "PNG",
+            "size": [
+              582,
+              522
+            ],
+            "mode": "RGB",
+            "shape": [
+              522,
+              582,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 9.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 1215350,
+            "format": "TIFF",
+            "size": [
+              582,
+              522
+            ],
+            "mode": "I",
+            "shape": [
+              522,
+              582
+            ],
+            "dtype": "int32",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 300355,
+              "1": 3449
+            }
+          }
+        },
+        {
+          "row_idx": 1,
+          "image1": {
+            "path": null,
+            "bytes_length": 1033301,
+            "format": "PNG",
+            "size": [
+              718,
+              776
+            ],
+            "mode": "RGB",
+            "shape": [
+              776,
+              718,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 42.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 942433,
+            "format": "PNG",
+            "size": [
+              718,
+              776
+            ],
+            "mode": "RGB",
+            "shape": [
+              776,
+              718,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 36.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 2228806,
+            "format": "TIFF",
+            "size": [
+              718,
+              776
+            ],
+            "mode": "I",
+            "shape": [
+              776,
+              718
+            ],
+            "dtype": "int32",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 548038,
+              "1": 9130
+            }
+          }
+        },
+        {
+          "row_idx": 2,
+          "image1": {
+            "path": null,
+            "bytes_length": 383276,
+            "format": "PNG",
+            "size": [
+              563,
+              339
+            ],
+            "mode": "RGB",
+            "shape": [
+              339,
+              563,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 15.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 365563,
+            "format": "PNG",
+            "size": [
+              563,
+              339
+            ],
+            "mode": "RGB",
+            "shape": [
+              339,
+              563,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 36.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 763562,
+            "format": "TIFF",
+            "size": [
+              563,
+              339
+            ],
+            "mode": "I",
+            "shape": [
+              339,
+              563
+            ],
+            "dtype": "int32",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 185925,
+              "1": 4932
+            }
+          }
+        },
+        {
+          "row_idx": 3,
+          "image1": {
+            "path": null,
+            "bytes_length": 1723069,
+            "format": "PNG",
+            "size": [
+              788,
+              1015
+            ],
+            "mode": "RGB",
+            "shape": [
+              1015,
+              788,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 1727356,
+            "format": "PNG",
+            "size": [
+              788,
+              1015
+            ],
+            "mode": "RGB",
+            "shape": [
+              1015,
+              788,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 13.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 3199414,
+            "format": "TIFF",
+            "size": [
+              788,
+              1015
+            ],
+            "mode": "I",
+            "shape": [
+              1015,
+              788
+            ],
+            "dtype": "int32",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 780878,
+              "1": 18942
+            }
+          }
+        },
+        {
+          "row_idx": 4,
+          "image1": {
+            "path": null,
+            "bytes_length": 524203,
+            "format": "PNG",
+            "size": [
+              525,
+              471
+            ],
+            "mode": "RGB",
+            "shape": [
+              471,
+              525,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 35.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 539424,
+            "format": "PNG",
+            "size": [
+              525,
+              471
+            ],
+            "mode": "RGB",
+            "shape": [
+              471,
+              525,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 34.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 989234,
+            "format": "TIFF",
+            "size": [
+              525,
+              471
+            ],
+            "mode": "I",
+            "shape": [
+              471,
+              525
+            ],
+            "dtype": "int32",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 242661,
+              "1": 4614
+            }
+          }
+        }
+      ]
+    },
+    "train-00000-of-00005.parquet": {
+      "size_mb": 508.23,
+      "num_rows": 128,
+      "num_row_groups": 2,
+      "columns": [
+        "image1",
+        "image2",
+        "mask"
+      ],
+      "sample_details": [
+        {
+          "row_idx": 0,
+          "image1": {
+            "path": null,
+            "bytes_length": 2136706,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 1925883,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 2803,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 1035387,
+              "1": 13189
+            }
+          }
+        },
+        {
+          "row_idx": 1,
+          "image1": {
+            "path": null,
+            "bytes_length": 2262319,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 1805584,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 1418,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 1046278,
+              "1": 2298
+            }
+          }
+        },
+        {
+          "row_idx": 2,
+          "image1": {
+            "path": null,
+            "bytes_length": 1516739,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 1499009,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 8201,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 1005795,
+              "1": 42781
+            }
+          }
+        },
+        {
+          "row_idx": 3,
+          "image1": {
+            "path": null,
+            "bytes_length": 1807460,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 1766805,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 12719,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 952399,
+              "1": 96177
+            }
+          }
+        },
+        {
+          "row_idx": 4,
+          "image1": {
+            "path": null,
+            "bytes_length": 1767362,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 1894342,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 13234,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 972430,
+              "1": 76146
+            }
+          }
+        }
+      ]
+    },
+    "train-00001-of-00005.parquet": {
+      "size_mb": 432.29,
+      "num_rows": 128,
+      "num_row_groups": 2,
+      "columns": [
+        "image1",
+        "image2",
+        "mask"
+      ],
+      "sample_details": [
+        {
+          "row_idx": 0,
+          "image1": {
+            "path": null,
+            "bytes_length": 1578378,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 2180550,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 29423,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 828108,
+              "1": 220468
+            }
+          }
+        },
+        {
+          "row_idx": 1,
+          "image1": {
+            "path": null,
+            "bytes_length": 1547224,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 246.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 1748103,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 14082,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 919574,
+              "1": 129002
+            }
+          }
+        },
+        {
+          "row_idx": 2,
+          "image1": {
+            "path": null,
+            "bytes_length": 1426199,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 2044260,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 27709,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 845290,
+              "1": 203286
+            }
+          }
+        },
+        {
+          "row_idx": 3,
+          "image1": {
+            "path": null,
+            "bytes_length": 1386398,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 239.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 1945426,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 27093,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 871525,
+              "1": 177051
+            }
+          }
+        },
+        {
+          "row_idx": 4,
+          "image1": {
+            "path": null,
+            "bytes_length": 2461635,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 2204503,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 3091,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 1042712,
+              "1": 5864
+            }
+          }
+        }
+      ]
+    },
+    "train-00002-of-00005.parquet": {
+      "size_mb": 473.78,
+      "num_rows": 127,
+      "num_row_groups": 2,
+      "columns": [
+        "image1",
+        "image2",
+        "mask"
+      ],
+      "sample_details": [
+        {
+          "row_idx": 0,
+          "image1": {
+            "path": null,
+            "bytes_length": 1652780,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 1449032,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 1283,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 1048045,
+              "1": 531
+            }
+          }
+        },
+        {
+          "row_idx": 1,
+          "image1": {
+            "path": null,
+            "bytes_length": 2162973,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 1848806,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 1097,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 0.0,
+            "unique_values": {
+              "0": 1048576
+            }
+          }
+        },
+        {
+          "row_idx": 2,
+          "image1": {
+            "path": null,
+            "bytes_length": 2236049,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 1958458,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 2181,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 1043929,
+              "1": 4647
+            }
+          }
+        },
+        {
+          "row_idx": 3,
+          "image1": {
+            "path": null,
+            "bytes_length": 2101366,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 1646123,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 2321,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 1045093,
+              "1": 3483
+            }
+          }
+        },
+        {
+          "row_idx": 4,
+          "image1": {
+            "path": null,
+            "bytes_length": 2377939,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 1675400,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 3925,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 1038737,
+              "1": 9839
+            }
+          }
+        }
+      ]
+    },
+    "train-00004-of-00005.parquet": {
+      "size_mb": 467.35,
+      "num_rows": 127,
+      "num_row_groups": 2,
+      "columns": [
+        "image1",
+        "image2",
+        "mask"
+      ],
+      "sample_details": [
+        {
+          "row_idx": 0,
+          "image1": {
+            "path": null,
+            "bytes_length": 2390261,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 2106174,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 7940,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 1007344,
+              "1": 41232
+            }
+          }
+        },
+        {
+          "row_idx": 1,
+          "image1": {
+            "path": null,
+            "bytes_length": 2656243,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 2291816,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 9760,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 976608,
+              "1": 71968
+            }
+          }
+        },
+        {
+          "row_idx": 2,
+          "image1": {
+            "path": null,
+            "bytes_length": 2617854,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 2091167,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 6040,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 1007072,
+              "1": 41504
+            }
+          }
+        },
+        {
+          "row_idx": 3,
+          "image1": {
+            "path": null,
+            "bytes_length": 2830473,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 2086596,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 7962,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 974669,
+              "1": 73907
+            }
+          }
+        },
+        {
+          "row_idx": 4,
+          "image1": {
+            "path": null,
+            "bytes_length": 2350524,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "image2": {
+            "path": null,
+            "bytes_length": 2213037,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "RGB",
+            "shape": [
+              1024,
+              1024,
+              3
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 255.0
+          },
+          "mask": {
+            "path": null,
+            "bytes_length": 6626,
+            "format": "PNG",
+            "size": [
+              1024,
+              1024
+            ],
+            "mode": "L",
+            "shape": [
+              1024,
+              1024
+            ],
+            "dtype": "uint8",
+            "min": 0.0,
+            "max": 1.0,
+            "unique_values": {
+              "0": 1005914,
+              "1": 42662
+            }
+          }
+        }
+      ]
+    }
+  },
+  "zip_archives": {
+    "Onera Satellite Change Detection dataset - Test Labels.zip": {
+      "size_bytes": 83614,
+      "total_entries": 42,
+      "detected_scenes": [
+        "brasilia",
+        "chongqing",
+        "dubai",
+        "lasvegas",
+        "milano",
+        "montpellier",
+        "norcia",
+        "rio",
+        "saclay_w",
+        "valencia"
+      ]
+    },
+    "Onera Satellite Change Detection dataset - Train Labels.zip": {
+      "size_bytes": 137873,
+      "total_entries": 58,
+      "detected_scenes": [
+        "abudhabi",
+        "aguasclaras",
+        "beihai",
+        "beirut",
+        "bercy",
+        "bordeaux",
+        "cupertino",
+        "hongkong",
+        "mumbai",
+        "nantes",
+        "paris",
+        "pisa",
+        "rennes",
+        "saclay_e"
+      ]
+    }
+  },
+  "crdownload_files": [
+    {
+      "name": "Unconfirmed 103139.crdownload",
+      "size_bytes": 114368506,
+      "size_mb": 109.07
+    },
+    {
+      "name": "Unconfirmed 19576.crdownload",
+      "size_bytes": 258468313,
+      "size_mb": 246.49
+    },
+    {
+      "name": "Unconfirmed 356722.crdownload",
+      "size_bytes": 369545212,
+      "size_mb": 352.43
+    },
+    {
+      "name": "Unconfirmed 69988.crdownload",
+      "size_bytes": 435746154,
+      "size_mb": 415.56
+    }
+  ],
+  "scenes": {},
+  "blockers": [],
+  "warnings": [
+    "Found 4 incomplete Chrome download files (*.crdownload) in dataset.",
+    "Multi-shard train set train-*-of-00005 has missing shards: ['00003']. (Likely aborted downloads represented by *.crdownload files)."
+  ],
+  "recommendations": [],
+  "single_shard_dataset": {
+    "train_rows": 14,
+    "test_rows": 10,
+    "status": "Both single-shard train (14 full scenes) and test (10 full scenes) exist and are complete!"
+  }
+}

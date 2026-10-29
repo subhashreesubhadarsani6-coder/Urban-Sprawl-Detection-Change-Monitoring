@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "description": "Geographically isolated scene splits for OSCD change detection",
+    "seed": 42,
+    "total_scenes": 24,
+    "train_scenes_count": 11,
+    "val_scenes_count": 3,
+    "test_scenes_count": 10
+  },
+  "train": [
+    "abudhabi",
+    "aguasclaras",
+    "beihai",
+    "bordeaux",
+    "cupertino",
+    "mumbai",
+    "nantes",
+    "paris",
+    "pisa",
+    "rennes",
+    "saclay_e"
+  ],
+  "val": [
+    "beirut",
+    "bercy",
+    "hongkong"
+  ],
+  "test": [
+    "brasilia",
+    "chongqing",
+    "dubai",
+    "lasvegas",
+    "milano",
+    "montpellier",
+    "norcia",
+    "rio",
+    "saclay_w",
+    "valencia"
+  ]
+}
